@@ -2,11 +2,11 @@
 
 <table>
 <tr> 
-<td>Package</td><td>APPNAME</td>
+<td>Package</td><td>shodan</td>
 </tr>
 <tr>
 <td>Description</td>
-<td>NOTHING HERE YET</td>
+<td>Shodan API for node</td>
 </tr>
 <tr>
 <td>Node Version</td>
@@ -17,12 +17,16 @@
 ## Usage
 
 ```coffee-script
-NOTHING HERE YET
+Shodan = require 'shodan'
+
+# Get an API key at http://shodanhq.com/api_doc
+api = new Shodan 'Your API Key'
+
 ```
 
 ## Examples
 
-You can view further examples in the [example folder.](https://github.com/wearefractal/APPNAME/tree/master/examples)
+You can view further examples in the [example folder.](https://github.com/wearefractal/node-shodan/tree/master/examples)
 
 ## LICENSE
 
