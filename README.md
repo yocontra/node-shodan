@@ -22,6 +22,19 @@ Shodan = require 'shodan'
 # Get an API key at http://shodanhq.com/api_doc
 api = new Shodan 'Your API Key'
 
+api.info (err, res) -> # Get API Key info
+api.search 'wrt54g city:Phoenix', (err, res) -> # Run a search query
+api.locations 'wrt54g', (err, res) -> # Run a location-oriented search query
+api.host '216.197.103.72', (err, res) -> # Get all information on a host
+api.fingerprint 'OpenSSH', (err, res) -> # Get software name for a banner
+
+api.wps.locate '00:1D:7E:F0:A2:B0', (err, res) -> # Get address/location of a MAC address
+
+api.exploits.search 'microsoft', (err, res) -> # Search ExploitDB 
+api.exploits.download '9939', (err, res) -> # Download exploit code
+
+api.msf.search 'microsoft', (err, res) -> # Search Metasploit
+api.msg.download 'exploit/windows/smb/smb_relay', (err, res) -> # Download metasploit module
 ```
 
 ## Examples
