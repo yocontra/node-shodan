@@ -34,7 +34,7 @@ api.exploits.search 'microsoft', (err, res) -> # Search ExploitDB
 api.exploits.download '9939', (err, res) -> # Download exploit code
 
 api.msf.search 'microsoft', (err, res) -> # Search Metasploit
-api.msg.download 'exploit/windows/smb/smb_relay', (err, res) -> # Download metasploit module
+api.msf.download 'exploit/windows/smb/smb_relay', (err, res) -> # Download metasploit module
 ```
 
 ## Examples
