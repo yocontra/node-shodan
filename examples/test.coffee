@@ -11,7 +11,6 @@ api.search 'wrt54g city:Phoenix', (err, res) ->
   should.not.exist err
   should.exist res
   should.exist res.matches[0].ip
-  console.log res
 
 api.locations 'wrt54g', (err, res) ->
   should.not.exist err
@@ -37,6 +36,7 @@ api.wps.locate '00:1D:7E:F0:A2:B0', (err, res) ->
   should.exist res.location.address
   #res.location.address.city.should.equal 'Portland'
 
+###
 api.exploits.search 'microsoft', (err, res) ->
   should.not.exist err
   should.exist res
@@ -46,3 +46,4 @@ api.msf.search 'microsoft', (err, res) ->
   should.not.exist err
   should.exist res
   console.log res
+###

@@ -44,7 +44,7 @@ class Shodan
       req opt, cb
 
   exploits:
-    search: (query..., cb) =>
+    search: (query..., cb) ->
       obj = query[1] or {}
       obj.q = query[0]
       @raw 'exploitdb/search', obj, cb
