@@ -1,5 +1,5 @@
 {
-   "name":"shodan",
+   "name":"shodanapi",
    "description":"Shodan API for node",
    "version":"0.0.1",
    "homepage":"http://github.com/wearefractal/node-shodan",

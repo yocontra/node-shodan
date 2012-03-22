@@ -2,7 +2,7 @@
 
 <table>
 <tr> 
-<td>Package</td><td>shodan</td>
+<td>Package</td><td>shodanapi</td>
 </tr>
 <tr>
 <td>Description</td>
@@ -17,7 +17,7 @@
 ## Usage
 
 ```coffee-script
-Shodan = require 'shodan'
+Shodan = require 'shodanapi'
 
 # Get an API key at http://shodanhq.com/api_doc
 api = new Shodan 'Your API Key'
