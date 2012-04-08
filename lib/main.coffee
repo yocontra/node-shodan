@@ -21,7 +21,11 @@ class Shodan
   baseurl: 'http://www.shodanhq.com'
 
   info: (cb) -> @raw 'info', null, cb
-  search: (query, cb) -> @raw 'search', {q: query}, cb
+  search: (query, page, cb) ->
+    if page and not cb
+      cb = page
+      page = undefined
+    @raw 'search', {q: query, page: page}, cb
   host: (ip, cb) -> @raw 'host', {ip: ip}, cb
   fingerprint: (banner, cb) -> @raw 'fingerprint', {banner: banner}, cb
   locations: (query, cb) -> @raw 'locations', {q: query}, cb
