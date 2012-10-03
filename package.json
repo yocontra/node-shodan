@@ -1,7 +1,7 @@
 {
    "name":"shodanapi",
    "description":"Shodan API for node",
-   "version":"0.0.2",
+   "version":"0.0.3",
    "homepage":"http://github.com/wearefractal/node-shodan",
    "repository":"git://github.com/wearefractal/node-shodan.git",
    "author":"Fractal <contact@wearefractal.com> (http://wearefractal.com/)",

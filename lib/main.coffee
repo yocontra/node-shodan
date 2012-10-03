@@ -24,8 +24,8 @@ class Shodan
   search: (query, page, cb) ->
     if page and not cb
       cb = page
-      page = undefined
-    @raw 'search', {q: query, page: page}, cb
+      page = 1
+    @raw 'search', {q: query, p: page, l:10000}, cb
   host: (ip, cb) -> @raw 'host', {ip: ip}, cb
   fingerprint: (banner, cb) -> @raw 'fingerprint', {banner: banner}, cb
   locations: (query, cb) -> @raw 'locations', {q: query}, cb
