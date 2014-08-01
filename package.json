@@ -1,26 +1,25 @@
 {
-   "name":"shodanapi",
-   "description":"Shodan API for node",
-   "version":"0.0.3",
-   "homepage":"http://github.com/wearefractal/node-shodan",
-   "repository":"git://github.com/wearefractal/node-shodan.git",
-   "author":"Fractal <contact@wearefractal.com> (http://wearefractal.com/)",
-   "main":"./index.js",
-   
-   "dependencies":{
-      "request":"*",
-      "coffee-script":"*"
-   },
-   "devDependencies":{
-      "should":"*"
-   },
-   "engines":{
-      "node":">= 0.4.0"
-   },
-   "licenses":[
-      {
-         "type":"MIT",
-         "url":"http://github.com/wearefractal/node-shodan/raw/master/LICENSE"
-      }
-   ]
+  "name": "shodanapi",
+  "description": "Shodan API for node",
+  "version": "0.0.3",
+  "homepage": "http://github.com/wearefractal/node-shodan",
+  "repository": "git://github.com/wearefractal/node-shodan.git",
+  "author": "Fractal <contact@wearefractal.com> (http://wearefractal.com/)",
+  "main": "./index.js",
+  "dependencies": {
+    "coffee-script": "^1.7.1",
+    "request": "^2.39.0"
+  },
+  "devDependencies": {
+    "should": "*"
+  },
+  "engines": {
+    "node": ">= 0.4.0"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/wearefractal/node-shodan/raw/master/LICENSE"
+    }
+  ]
 }
